@@ -6,6 +6,7 @@ const morgan = require("morgan");
 const mongoose = require("mongoose");
 const userRoute = require("./routes/users");
 const authRoute = require("./routes/auth");
+const postRoute = require("./routes/posts");
 
 dotenv.config();
 
@@ -22,6 +23,7 @@ app.use(morgan("common"));
 
 app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);
+app.use("/api/posts", postRoute);
 
 app.listen(5001, () => {
   console.log("You are now listening to smooth jazz on port 5001");
