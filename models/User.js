@@ -20,11 +20,11 @@ const UserSchema = new mongoose.Schema(
       required: true,
       min: 10,
     },
-    profilePicture: {
+    profileImage: {
       type: String,
       default: "",
     },
-    coverPicture: {
+    coverImage: {
       type: String,
       default: "",
     },
